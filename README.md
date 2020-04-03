@@ -1,3 +1,4 @@
+# install command
 mkdir ~/greenlight && cd ~/greenlight
 docker run --rm bigbluebutton/greenlight:v2 cat ./sample.env > .env
 docker run --rm bigbluebutton/greenlight:v2 bundle exec rake secret`
@@ -14,3 +15,5 @@ docker run --rm bigbluebutton/greenlight:v2 cat ./docker-compose.yml > docker-co
 export pass=$(openssl rand -hex 8); sed -i 's/POSTGRES_PASSWORD=password/POSTGRES_PASSWORD='$pass'/g' docker-compose.yml;sed -i 's/DB_PASSWORD=password/DB_PASSWORD='$pass'/g' .env
 docker-compose up -d
 
+# add admin
+docker exec greenlight-v2 bundle exec rake user:create["strongpapazola","example@gmail.com","123456789","admin"]
