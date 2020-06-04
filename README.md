@@ -28,3 +28,5 @@ docker-compose down
 ./scripts/image_build.sh {name_image} {release_name}
 docker-compose up -d
 </pre>
+
+# <strong>after restart...you must wait 3 minute...if not you will got 404 error not found<strong>
