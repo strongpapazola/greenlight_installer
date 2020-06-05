@@ -49,7 +49,7 @@ docker-compose up -d</pre>
 <pre>
 cd ~/greenlight
 docker-compose down
-./scripts/image_build.sh {name_image} {release_name}
+./scripts/image_build.sh {name_image} release-v2
 docker-compose up -d
 </pre>
 
