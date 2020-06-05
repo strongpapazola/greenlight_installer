@@ -37,9 +37,9 @@ With:
 <pre>services:
   app:
     entrypoint: [bin/start]
-    image: <image name>:release-v2</pre>
+    image: {image name}:release-v2</pre>
   
-</pre>./scripts/image_build.sh <image name> release-v2
+</pre>./scripts/image_build.sh {image name} release-v2
 docker-compose up -d</pre>
 
 # Add Admin
