@@ -1,5 +1,3 @@
-# <strong>{DEVELOPING}</strong>
-
 # Install Command
 1. Install Docker
 <pre>docker -v</pre>
@@ -39,7 +37,7 @@ With:
     entrypoint: [bin/start]
     image: {image name}:release-v2</pre>
   
-</pre>./scripts/image_build.sh {image name} release-v2
+<pre>./scripts/image_build.sh {image name} release-v2
 docker-compose up -d</pre>
 
 # Add Admin
