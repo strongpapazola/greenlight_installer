@@ -18,7 +18,7 @@ Place on <strong>BIGBLUEBUTTON_ENDPOINT</strong> and <strong>BIGBLUEBUTTON_SECRE
 Edit on SAFE_HOSTS to your domain
 <pre>SAFE_HOSTS=bbb.example.com</pre>
 - Verifying Configuration
-docker run --rm --env-file .env bigbluebutton/greenlight:v2 bundle exec rake conf:check
+<pre>docker run --rm --env-file .env bigbluebutton/greenlight:v2 bundle exec rake conf:check</pre>
 
 4. Configure Nginx to Route To Greenlight
 <pre>cat ./greenlight.nginx | sudo tee /etc/bigbluebutton/nginx/greenlight.nginx
@@ -53,4 +53,8 @@ docker-compose down
 docker-compose up -d
 </pre>
 
-# <strong>after restart...you must wait 3 minute...if not you will got 404 error not found<strong>
+<strong>after restart...
+you must wait few minute...
+if not you will got 404 error not found...
+for Verifying your greenlight is running type</strong>
+<pre>docker container ls</pre>
